@@ -9,8 +9,10 @@ def triangle(a, b, c):
 
 
 if __name__ == '__main__':
-    triangle(2, 2, 2)
-    triangle(2, 3, 4)
+    side_a = int(input('Please input triangle side a: '))
+    side_b = int(input('Please input triangle side b: '))
+    side_c = int(input('Please input triangle side c: '))
 
-    triangle(2, 2, 3)
-    triangle(3, 2, 2)
+    triangle_type = triangle(side_a, side_b, side_c)
+
+    print(triangle_type)
